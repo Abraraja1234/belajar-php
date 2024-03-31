@@ -49,6 +49,7 @@
                 "gambar" => "img/foto4.jpg.jpg",
                 "harga" => "50.000"
             ),
+            
         );
 
         // Menampilkan produk

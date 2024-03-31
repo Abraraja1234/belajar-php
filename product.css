@@ -67,17 +67,20 @@ header {
 }
 
 /* Tempatkan di sini untuk menetapkan tata letak Flexbox */
-.card-container {
+.container {
     display: flex;
-    flex-wrap: wrap; /* Mengatur agar kartu-kartu dapat melintasi baris jika tidak muat dalam satu baris */
-    justify-content: space-between; /* Mengatur jarak antara kartu-kartu */
+    flex-wrap: wrap;
+    justify-content: center; /* Ini mengatur posisi horizontal elemen-elemen */
+    flex-direction: row; /* Ini mengatur tata letak elemen-elemen secara horizontal */
+
 }
 
 .card {
-    width: calc(50% - 20px); /* Mengatur lebar kartu agar muat dua kartu dalam satu baris dan menghindari overflow */
-    margin-bottom: 20px;
-    box-sizing: border-box; /* Menghitung padding dan border dalam perhitungan lebar */
-}
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: center;
+    background-color: #e1d8d8;
+  }
 
 /* Responsif */
 @media screen and (max-width: 600px) {
